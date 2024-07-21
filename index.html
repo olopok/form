@@ -7,6 +7,53 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <div class="main-container">
+            <div class="left-container">
+                <span>Photo by Mark Adriane on Unsplash</span>
+            </div>
+            <div class="right-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est assumenda, aspernatur quia aliquid eius culpa non consequuntur earum obcaecati.</p>
+                <form>
+                    <fieldset>
+                       <legend>Sign Up</legend> 
+                        <section class="first">
+                            <div class="form-field">
+                                <label for="fname">First Name *</label>
+                                <input type="text" id="fname" placeholder="Your name" pattern="[A-Za-z]*" required title=" insert only letters">
+                            </div>
+                            <div class="form-field">
+                                <label for="sname">Surname *</label>
+                                <input type="text" id="sname" placeholder="Your surname" required pattern="[a-zA-Z]*" title=" insert only letters">
+                            </div>
+                        </section>
+                        <section class="second">
+                            <div class="form-field">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" required placeholder="youremail@xyz.com">
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" max="13" placeholder="only number" pattern="[0-9]*" title=" insert only number">
+                            </div>
+                        </section>
+                        <section class="third">
+                            <div class="form-field">
+                                <label for="pass">Password *</label>
+                                <input type="password" id="pass" required minlength="5" maxlength="9">
+                            </div>
+                            <div class="form-field">
+                                <label for="cpass">Confirm password *</label>
+                                <input type="password" id="cpass" required minlength="5" maxlength="9">
+                            </div>
+                        </section>
+                        <h6>* Required</h6>
+                    </fieldset>
+                    <div class="submit">
+                        <button type="submit" id="submit">Submit</button>
+                        <span>Already have account? <a href="http://">Sign In</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
